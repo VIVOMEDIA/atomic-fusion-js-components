@@ -26,7 +26,6 @@ class JavaScriptComponentAugmentationAspect
     protected $tryFiles;
 
     /**
-     * @Flow\Around("setting(PackageFactory.AtomicFusion.JsComponents.enable) && method(PackageFactory\AtomicFusion\FusionObjects\ComponentImplementation->evaluate())")
      * @Flow\Around("setting(PackageFactory.AtomicFusion.JsComponents.enable) && method(Neos\Fusion\FusionObjects\ComponentImplementation->evaluate())")
      * @param JoinPointInterface $joinPoint
      * @return mixed
